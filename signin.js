@@ -19,13 +19,13 @@ signInBtn.addEventListener("click", (e) => {
         if (signInEmail === data.email) {
           bcrypt.compare(signInPassword, data.hash).then((valid) => {
             if (!valid) {
-              return window.alert("Please enter a correct Passowrd!");
+             return;
             } else {
               return window.alert("You are succesfully Login");
             }
           });
         } else {
-          return window.alert("Please enter a correct email address");
+          alert("Please enter a correct email and password address");
         }
       });
     });

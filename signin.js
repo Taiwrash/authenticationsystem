@@ -21,7 +21,7 @@ signInBtn.addEventListener("click", (e) => {
             if (!valid) {
              return;
             } else {
-              return window.alert("You are succesfully Login");
+              return alert("You are succesfully Login");
             }
           });
         } else {

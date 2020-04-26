@@ -23,6 +23,6 @@ submitBtn.addEventListener("click", (e) => {
     db.collection("users");
   }
 
-  console.log("User Successfully added");
+  alert("You are successfully signed up");
   myForm.reset();
 });

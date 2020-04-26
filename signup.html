@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>authentication system</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Sign Up System</h3>
+      <form action="" class="auth-form" method="" id="my-form">
+        <input
+          type="email"
+          class="e-mail"
+          placeholder="Type in your e-mail address Here..."
+          id="email"
+        /><br />
+        <input
+          type="password"
+          class="password"
+          placeholder="Type In your password Here..."
+          id="password"
+        />
+        <button type="submit" id="sign-up" class="btn">Sign Up</button>
+      </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.js"></script>
+    <script src="app.js"></script>
+    <script src="signup.js"></script>
+  </body>
+</html>

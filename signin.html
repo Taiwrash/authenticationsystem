@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>authentication system</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="login">
+        <h3>Sign In System</h3>
+        <form action="" class="auth-form" method="" id="my-form">
+          <input
+            type="email"
+            id="email"
+            class="e-mail"
+            placeholder="Type in your e-mail address.."
+          /><br />
+          <input
+            type="password"
+            id="password"
+            class="password"
+            placeholder="Type in your password..."
+          />
+        </form>
+        <button type="submit" class="btn" id="sign-in">Sign In</button>
+
+        <button type="submit" id="sign-up" class="btn" style="display: none;">
+          SIGN UP
+        </button>
+      </div>
+      <!-- <div  id="welcome">
+        <p>Welcome to our website</p>
+        <button class="btn">Sign Out</button>
+      </div> -->
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.js"></script>
+    <script src="app.js"></script>
+    <script src="signup.js"></script>
+    <script src="signin.js"></script>
+  </body>
+</html>

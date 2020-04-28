@@ -16,22 +16,19 @@ signInBtn.addEventListener("click", (e) => {
           hash: doc.data().hash,
         };
 
-        if (signInEmail === data.email) {
-          bcrypt.compare(signInPassword, data.hash).then((valid) => {
-            if (!valid) {
-              return window.alert("Please enter a correct Passowrd!");
-            } else {
-              return window.alert("You are succesfully Login");
-            }
-          });
+        let location = " ";
+
+        if (signInEmail !== "" && signInEmail === data.email) {
+          bcrypt.compare(signInPassword, data.hash);
+          location = "welcome.html";
         } else {
-          return window.alert("Please enter a correct email address");
+          location = "signup.html";
         }
+        this.location.href = location;
+        console.log(location);
       });
     });
-
+  console.log(location);
   e.preventDefault();
-  db.collection("users");
-  console.log("User Successfully Logged in");
   signInMyForm.reset();
 });
